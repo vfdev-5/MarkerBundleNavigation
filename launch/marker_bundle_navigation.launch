@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+-->
+<launch>
+	<node name="navigation_node" 
+		pkg="marker_bundle_navigation" 
+		type="marker_bundle_navigation_node"
+		respawn="false" 
+		output="screen" >
+		
+		<param name="marker_frames" value="ar_marker_0;ar_marker_2;ar_marker_4"/>
+		<param name="camera_frame" value="camera_frame"/>
+
+
+		<param name="verbose" value="true"/>
+		
+	</node>
+</launch>
